@@ -7,17 +7,28 @@ var height = 400;
 var padding = 100;
 
 // TODO 真实数据构造
-var data_array = [10000,20000,13000];
-var name_array = ['首页', '团购页', '支付'];
+var data_array = [10000,20000,13000,10000,40000];
+var name_array = ['首页', '团购页', '支付', 'dee', 'dasd'];
 var title = '交易平台漏斗[M站]';
-var rate_array = ['10%', '20%'];
-var num_array = ['12345','1233'];
+var rate_array = ['10%', '20%', 'asdas', 'asdas'];
+var num_array = ['12345','1233', 'dasdas', 'asdsa'];
 var sub_title = "总转化率(UV): 75%";
-// tip
-var tip = d3.tip().attr('class', 'd3-tip').html(function (d) {
-    return "<font color='red'>" + d + "</font>";
+
+var tip = d3.tip().html(function (d) {
+    return "<div class='first-tooltip-board'>" +
+                "<div class='hv-center-title'>PV</div>" +
+                "<div class='hv-center-val'>" + d + "</div>" +
+            "</div>" +
+            "<div class='middle-tooltip-board'>" +
+                "<div class='hv-center-title'>UV</div>" +
+                "<div class='hv-center-val'>" + d +"</div>" +
+            "</div>" +
+            "<div class='last-tooltip-board'>" +
+                "<div class='hv-center-title'>Vistis</div>" +
+                "<div class='hv-center-val'>" + d + "</div>" +
+            "</div>" +
+            "<div class='triangle'></div>";
 });
-//
 
 var virtual_count = 2 * data_array.length - 1;
 var arrow_count = data_array.length - 1;
@@ -140,8 +151,8 @@ poly_arrows
         console.log(points);
         return points;
     })
-    .attr('stroke', 'purple')
-    .attr('stroke-width', 5)
+    .attr('stroke', "rgba(159, 0, 197,0.75)")
+    .attr('stroke-width', 6)
     .attr('fill', 'none');
 
 label

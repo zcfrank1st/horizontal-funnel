@@ -1,0 +1,48 @@
+.first-tooltip-board {
+    background-color: whitesmoke;
+    height: 80px;
+    width: 80px;
+    border-width: 2px 1px 2px 2px;
+    border-style: solid;
+    border-color: gainsboro;
+    display: inline-block;
+}
+
+.middle-tooltip-board {
+    background-color: whitesmoke;
+    height: 80px;
+    width: 80px;
+    border-width: 2px 1px 2px 1px;
+    border-style: solid;
+    border-color: gainsboro;
+    display: inline-block;
+}
+
+.last-tooltip-board {
+    background-color: whitesmoke;
+    height: 80px;
+    width: 80px;
+    border-width: 2px 2px 2px 1px;
+    border-style: solid;
+    border-color: gainsboro;
+    display: inline-block;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid gainsboro;
+    margin-left: 115px;
+}
+
+.hv-center-title{
+    text-align: center;
+    margin-top: 20px;
+    color: gray;
+}
+.hv-center-val{
+    text-align: center;
+    margin-top: 10px;
+}
