@@ -6,7 +6,7 @@ var width = 900;
 var height = 400;
 var padding = 100;
 
-// TODO 真实数据构造
+// TODO 真实数据构造 d.XXX
 var data_array = [10000,20000,13000,10000,40000];
 var name_array = ['首页', '团购页', '支付', 'dee', 'dasd'];
 var title = '交易平台漏斗[M站]';
